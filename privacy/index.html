@@ -1,1 +1,304 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurum · Política de privacidad · Privacy policy · Política de privacidade</title>
+<meta name="description" content="Aurum no recoge ni envía tus datos. Privacy policy of Aurum, a video player for Android TV.">
+<style>
+  :root {
+    --bg: #0A0A0A;
+    --panel: #151515;
+    --fg: #ECECEC;
+    --muted: #A9A9A9;
+    --line: #2B2B2B;
+    --gold: #F5A623;
+    --gold-deep: #9A5F0A;
+    --serif: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--serif);
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+
+  header.top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .brand {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: .04em;
+    color: var(--gold);
+    text-decoration: none;
+  }
+  nav#langnav { display: flex; gap: .25rem; }
+  nav#langnav button {
+    font: 600 .9rem var(--sans);
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: .4rem .95rem;
+    cursor: pointer;
+  }
+  nav#langnav button[aria-pressed="true"] {
+    color: #0A0A0A;
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  article { padding-top: 2.75rem; }
+  article + article { margin-top: 4.5rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 3.1rem);
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    margin: 0 0 1rem;
+  }
+  .updated { font: .95rem var(--sans); color: var(--muted); margin: 0 0 2.25rem; }
+  .lead {
+    font-size: 1.25rem;
+    padding: 1.25rem 1.4rem;
+    margin: 0 0 2.5rem;
+    background: var(--panel);
+    border-left: 4px solid var(--gold);
+    border-radius: 0 6px 6px 0;
+  }
+  h2 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--gold);
+    margin: 2.5rem 0 .5rem;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .5rem; }
+  a { color: var(--gold); text-underline-offset: 3px; }
+  footer { margin-top: 3.5rem; font: .9rem var(--sans); color: var(--muted); }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <span class="brand">Aurum</span>
+  <nav id="langnav" aria-label="Language / Idioma / Idioma" hidden>
+    <button type="button" data-switch="es" aria-pressed="true">Español</button>
+    <button type="button" data-switch="en" aria-pressed="false">English</button>
+    <button type="button" data-switch="pt" aria-pressed="false">Português</button>
+  </nav>
+</header>
+
+<!-- ============================ ESPAÑOL ============================ -->
+<article data-lang="es" lang="es">
+  <h1>Política de privacidad</h1>
+  <p class="updated">Última actualización: 20 de noviembre de 2026</p>
+
+  <p class="lead">Tus videos y tus datos se quedan en tu televisor. Aurum no recoge, envía ni vende información sobre ti: perfiles, favoritos, progreso y PIN se guardan solo en tu dispositivo. Aurum no se conecta a internet.</p>
+
+  <h2>Quién es el responsable</h2>
+  <p>Aurum es una aplicación de reproducción de video para Android TV, desarrollada por David Godoy Huaman, desarrollador independiente. Puedes escribirme a <a href="mailto:davidgodoyhdev@gmail.com">davidgodoyhdev@gmail.com</a>.</p>
+
+  <h2>Qué hace Aurum con tus videos</h2>
+  <p>Aurum reproduce los videos que ya tienes en la memoria de tu televisor o en un USB. Para mostrarlos, lee la lista de archivos de video de esas ubicaciones. Esa lectura ocurre en tu dispositivo: Aurum no sube tus videos, sus nombres ni sus miniaturas a ningún servidor.</p>
+
+  <h2>Información que se guarda en tu dispositivo</h2>
+  <ul>
+    <li>Tus perfiles: nombre, avatar y color que elijas.</li>
+    <li>Por perfil: favoritos, listas de reproducción, el punto donde dejaste cada video y estadísticas de reproducción.</li>
+    <li>Tus preferencias: subtítulo elegido, orden y vista de la lista y filtro de origen.</li>
+    <li>PIN de perfil, PIN de listas de reproducción, PIN de la carpeta privada, PIN maestro y claves de recuperación. De cada uno solo se guarda su huella (hash), nunca el número original. El PIN maestro, el PIN y la clave de la carpeta privada y los datos de esa carpeta se guardan además en el almacenamiento cifrado de Android.</li>
+    <li>Las copias de videos que descargues desde un USB a la memoria interna.</li>
+    <li>Miniaturas en caché y, si la aplicación falla, un informe técnico con la fecha, el modelo del dispositivo, la versión de Android, la versión de Aurum y el detalle del error. Ese informe se queda en el dispositivo y no se envía automáticamente.</li>
+  </ul>
+  <p>Todo esto se elimina al desinstalar Aurum o al borrar sus datos desde los ajustes de Android.</p>
+
+  <h2>Información que Aurum no recoge</h2>
+  <p>Aurum no te pide crear una cuenta. No recoge tu nombre real, correo, ubicación, contactos ni identificadores publicitarios. No contiene publicidad, herramientas de analítica ni rastreadores de terceros.</p>
+  <p>Aurum es gratuita y no contiene compras ni anuncios.</p>
+
+  <h2>Informes de fallos de Google Play</h2>
+  <p>Google Play puede recoger datos de fallos y rendimiento de los dispositivos cuyos usuarios han activado el uso compartido de diagnósticos, y mostrármelos para mejorar la aplicación. Ese tratamiento lo realiza Google bajo su propia política de privacidad.</p>
+
+  <h2>Permisos</h2>
+  <ul>
+    <li>Lectura de videos y almacenamiento: para encontrar y reproducir los videos de la memoria interna y del USB.</li>
+    <li>Estado de la red: lo usan los componentes de Android de reproducción y de tareas en segundo plano para saber si hay conexión. Aurum no tiene permiso de acceso a internet y no se conecta a ningún servidor.</li>
+    <li>Tareas en segundo plano (mantener activo el dispositivo, servicio en primer plano e inicio tras reiniciar): para que las descargas del USB a la memoria interna puedan terminar en segundo plano.</li>
+  </ul>
+
+  <h2>Seguridad</h2>
+  <p>Los PIN y las claves de recuperación se guardan como huellas (hash), nunca el número original, y la carpeta privada usa el almacenamiento cifrado de Android. Como no tengo acceso a tus datos, tampoco puedo restablecer tus PIN: guarda la clave de recuperación que Aurum te muestra al crear el PIN de un perfil o de la carpeta privada.</p>
+
+  <h2>Menores de edad</h2>
+  <p>Aurum no está dirigida a niños. Como no recoge datos personales de nadie, tampoco los recoge de menores.</p>
+
+  <h2>Tus derechos y la eliminación de datos</h2>
+  <p>No guardo datos tuyos en servidores, así que no hay nada que pedirme que borre. Para eliminar la información de Aurum, desinstala la aplicación o borra sus datos desde los ajustes de Android. Si tienes dudas, escríbeme.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si la política cambia, publicaré la nueva versión en esta misma dirección con su fecha. Si un cambio implicara recoger datos, te lo avisaré dentro de la aplicación antes de aplicarlo.</p>
+
+  <h2>Contacto</h2>
+  <p><a href="mailto:davidgodoyhdev@gmail.com">davidgodoyhdev@gmail.com</a></p>
+</article>
+
+<!-- ============================ ENGLISH ============================ -->
+<article data-lang="en" lang="en">
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated: November 20, 2026</p>
+
+  <p class="lead">Your videos and your data stay on your TV. Aurum doesn’t collect, send, or sell information about you: profiles, favorites, progress, and PINs are stored only on your device. Aurum doesn’t connect to the internet.</p>
+
+  <h2>Who is responsible</h2>
+  <p>Aurum is a video player app for Android TV, developed by David Godoy Huaman, an independent developer. You can reach me at <a href="mailto:davidgodoyhdev@gmail.com">davidgodoyhdev@gmail.com</a>.</p>
+
+  <h2>What Aurum does with your videos</h2>
+  <p>Aurum plays the videos you already have on your TV’s storage or on a USB drive. To list them, it reads the list of video files in those locations. This happens on your device: Aurum doesn’t upload your videos, their file names, or their thumbnails to any server.</p>
+
+  <h2>Information stored on your device</h2>
+  <ul>
+    <li>Your profiles: the name, avatar, and color you choose.</li>
+    <li>Per profile: favorites, playlists, the point where you stopped each video, and viewing statistics.</li>
+    <li>Your preferences: selected subtitle, list order and view, and source filter.</li>
+    <li>Profile PINs, playlist PINs, the private folder PIN, the master PIN, and recovery keys. For each one only its fingerprint (hash) is stored, never the original number. The master PIN, the private folder’s PIN and recovery key, and that folder’s data are additionally kept in Android’s encrypted storage.</li>
+    <li>Copies of videos you download from a USB drive to internal storage.</li>
+    <li>Cached thumbnails and, if the app crashes, a technical report with the date, device model, Android version, Aurum version, and error details. That report stays on the device and is not sent automatically.</li>
+  </ul>
+  <p>All of this is deleted when you uninstall Aurum or clear its data in Android settings.</p>
+
+  <h2>Information Aurum does not collect</h2>
+  <p>Aurum doesn’t ask you to create an account. It doesn’t collect your real name, email, location, contacts, or advertising identifiers. It contains no ads, no analytics tools, and no third-party trackers.</p>
+  <p>Aurum is free and contains no purchases or ads.</p>
+
+  <h2>Google Play crash reports</h2>
+  <p>Google Play may collect crash and performance data from devices whose users have chosen to share diagnostics, and show it to me so I can improve the app. Google handles that data under its own privacy policy.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li>Video and storage read access: to find and play the videos on internal storage and on USB drives.</li>
+    <li>Network state: used by Android’s playback and background-task components to know whether a connection is available. Aurum has no internet permission and doesn’t connect to any server.</li>
+    <li>Background tasks (keeping the device awake, foreground service, and starting after a reboot): so that downloads from a USB drive to internal storage can finish in the background.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>PINs and recovery keys are stored as fingerprints (hashes), never the original number, and the private folder uses Android’s encrypted storage. Because I have no access to your data, I also can’t reset your PINs: keep the recovery key Aurum shows you when you create a profile or private folder PIN.</p>
+
+  <h2>Children</h2>
+  <p>Aurum is not directed at children. Because it doesn’t collect personal data from anyone, it doesn’t collect it from minors either.</p>
+
+  <h2>Your rights and data deletion</h2>
+  <p>I don’t store your data on servers, so there is nothing for me to delete. To remove Aurum’s information, uninstall the app or clear its data in Android settings. If you have questions, write to me.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, I’ll publish the new version at this address with its date. If a change would involve collecting data, I’ll tell you inside the app before it takes effect.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:davidgodoyhdev@gmail.com">davidgodoyhdev@gmail.com</a></p>
+</article>
+
+<!-- ============================ PORTUGUÊS (BR) ============================ -->
+<article data-lang="pt" lang="pt-BR">
+  <h1>Política de privacidade</h1>
+  <p class="updated">Última atualização: 20 de novembro de 2026</p>
+
+  <p class="lead">Seus vídeos e seus dados ficam na sua TV. O Aurum não coleta, envia nem vende informações sobre você: perfis, favoritos, progresso e PINs são guardados apenas no seu dispositivo. O Aurum não se conecta à internet.</p>
+
+  <h2>Quem é o responsável</h2>
+  <p>O Aurum é um aplicativo de reprodução de vídeo para Android TV, desenvolvido por David Godoy Huaman, desenvolvedor independente. Você pode falar comigo em <a href="mailto:davidgodoyhdev@gmail.com">davidgodoyhdev@gmail.com</a>.</p>
+
+  <h2>O que o Aurum faz com seus vídeos</h2>
+  <p>O Aurum reproduz os vídeos que você já tem na memória da sua TV ou em um pendrive USB. Para exibi-los, ele lê a lista de arquivos de vídeo desses locais. Essa leitura acontece no seu dispositivo: o Aurum não envia seus vídeos, os nomes deles nem as miniaturas para nenhum servidor.</p>
+
+  <h2>Informações guardadas no seu dispositivo</h2>
+  <ul>
+    <li>Seus perfis: nome, avatar e cor que você escolher.</li>
+    <li>Por perfil: favoritos, listas de reprodução, o ponto em que você parou cada vídeo e estatísticas de reprodução.</li>
+    <li>Suas preferências: legenda escolhida, ordem e visualização da lista e filtro de origem.</li>
+    <li>PIN de perfil, PIN de listas de reprodução, PIN da pasta privada, PIN mestre e chaves de recuperação. De cada um é guardada apenas a impressão digital (hash), nunca o número original. O PIN mestre, o PIN e a chave da pasta privada e os dados dessa pasta também são guardados no armazenamento criptografado do Android.</li>
+    <li>Cópias de vídeos que você baixar de um USB para a memória interna.</li>
+    <li>Miniaturas em cache e, se o aplicativo falhar, um relatório técnico com a data, o modelo do dispositivo, a versão do Android, a versão do Aurum e os detalhes do erro. Esse relatório permanece no dispositivo e não é enviado automaticamente.</li>
+  </ul>
+  <p>Tudo isso é apagado quando você desinstala o Aurum ou limpa os dados dele nas configurações do Android.</p>
+
+  <h2>Informações que o Aurum não coleta</h2>
+  <p>O Aurum não pede que você crie uma conta. Não coleta seu nome real, e-mail, localização, contatos nem identificadores de publicidade. Não contém anúncios, ferramentas de análise nem rastreadores de terceiros.</p>
+  <p>O Aurum é gratuito e não contém compras nem anúncios.</p>
+
+  <h2>Relatórios de falhas do Google Play</h2>
+  <p>O Google Play pode coletar dados de falhas e desempenho de dispositivos cujos usuários ativaram o compartilhamento de diagnósticos e mostrá-los para mim, para que eu melhore o aplicativo. O Google trata esses dados sob a política de privacidade dele.</p>
+
+  <h2>Permissões</h2>
+  <ul>
+    <li>Leitura de vídeos e armazenamento: para encontrar e reproduzir os vídeos da memória interna e do USB.</li>
+    <li>Estado da rede: usado pelos componentes do Android de reprodução e de tarefas em segundo plano para saber se há conexão. O Aurum não tem permissão de acesso à internet e não se conecta a nenhum servidor.</li>
+    <li>Tarefas em segundo plano (manter o dispositivo ativo, serviço em primeiro plano e início após reiniciar): para que os downloads do USB para a memória interna possam terminar em segundo plano.</li>
+  </ul>
+
+  <h2>Segurança</h2>
+  <p>Os PINs e as chaves de recuperação são guardados como impressões digitais (hash), nunca o número original, e a pasta privada usa o armazenamento criptografado do Android. Como não tenho acesso aos seus dados, também não posso redefinir seus PINs: guarde a chave de recuperação que o Aurum mostra quando você cria o PIN de um perfil ou da pasta privada.</p>
+
+  <h2>Menores de idade</h2>
+  <p>O Aurum não é direcionado a crianças. Como não coleta dados pessoais de ninguém, também não os coleta de menores.</p>
+
+  <h2>Seus direitos e a exclusão de dados</h2>
+  <p>Não guardo dados seus em servidores, então não há nada para você me pedir que apague. Para remover as informações do Aurum, desinstale o aplicativo ou limpe os dados dele nas configurações do Android. Se tiver dúvidas, escreva para mim.</p>
+
+  <h2>Alterações nesta política</h2>
+  <p>Se a política mudar, publicarei a nova versão neste mesmo endereço, com a data. Se uma mudança envolver coletar dados, avisarei você dentro do aplicativo antes de ela entrar em vigor.</p>
+
+  <h2>Contato</h2>
+  <p><a href="mailto:davidgodoyhdev@gmail.com">davidgodoyhdev@gmail.com</a></p>
+</article>
+
+<footer>Aurum · com.davidgohu.aurum</footer>
+</div>
+
+<script>
+(function () {
+  var langs = ['es', 'en', 'pt'];
+  var arts = document.querySelectorAll('article[data-lang]');
+  var btns = document.querySelectorAll('[data-switch]');
+  var nav = document.getElementById('langnav');
+
+  function show(l) {
+    arts.forEach(function (a) { a.hidden = a.getAttribute('data-lang') !== l; });
+    btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-switch') === l ? 'true' : 'false'); });
+    document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
+    try { history.replaceState(null, '', '#' + l); } catch (e) {}
+  }
+
+  var fromHash = location.hash.replace('#', '');
+  var fromBrowser = (navigator.language || 'es').slice(0, 2);
+  var start = langs.indexOf(fromHash) > -1 ? fromHash : (langs.indexOf(fromBrowser) > -1 ? fromBrowser : 'es');
+
+  nav.hidden = false;
+  btns.forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-switch')); }); });
+  show(start);
+})();
+</script>
+</body>
+</html>
 
